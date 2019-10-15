@@ -18,7 +18,7 @@ if(isset($_POST['sendemail']))
 
     $email = new \SendGrid\Mail\Mail(); 
     $email->setFrom("nemanjajakonic@gmail.com", "$name");
-    $email->setSubject("Contact from: <".$email_id.">");
+    $email->setSubject("Contact from : ".$name." <".$email_id.">");
     $email->addTo( "nemanjajakonic@gmail.com", "Nemanja Jakonić");
     $email->addContent("text/plain", $message);
     // $email->addContent(
