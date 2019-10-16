@@ -105,7 +105,7 @@ if(isset($_POST['sendemail']))
         <div class="projects">
           <div id="project1">
             <h3>Kokoro</h3>
-            <p id="p1">Technologies used: HTMl, CSS, Javascript, Jquery</p>
+            <p class="p1">Technologies used: HTMl, CSS, Javascript, Jquery</p>
             <div class="project project1">
               <div class="overlay"></div>
               <a
@@ -120,12 +120,14 @@ if(isset($_POST['sendemail']))
                 class="btn btn-project"
                 >Code</a
               >
+              <p class="p1">Project I did for kendo club I train in.Single page, fully responsive.</p>
             </div>
+    
           </div>
 
           <div id="project2">
             <h3>Rock, paper, scissors</h3>
-            <p id="p2">
+            <p class="p2">
               Technologies used: HTMl, CSS, Bootstrap 4, Vanilla Javascript
             </p>
             <div class="project project2">
@@ -142,11 +144,13 @@ if(isset($_POST['sendemail']))
                 class="btn btn-project"
                 >Code</a
               >
+              <p class='p2'>First Javascript project, well-known game rock, paper, scissors</p>
+
             </div>
           </div>
           <div id="project3">
             <h3>WeatherJS</h3>
-            <p id="p3">Technologies used: HTMl, CSS, Vanilla Javascript</p>
+            <p class="p3">Technologies used: HTMl, CSS, Javascript</p>
             <div class="project project3">
               <div class="overlay"></div>
               <a
@@ -161,15 +165,19 @@ if(isset($_POST['sendemail']))
                 class="btn btn-project"
                 >Code</a
               >
+              <p class='p3'>Simple weather app with OpenWeather Api</p>
+
             </div>
           </div>
           <div id="project4">
             <h3>Formula F1 Stats</h3>
-            <p id="p4">Technologies used: HTMl,CSS,Javascript</p>
+            <p class="p4">Technologies used: ReactJS, MaterializeCSS</p>
             <div class="project project4">
               <div class="overlay"></div>
               <a href="" class="btn btn-project">Demo</a>
               <a href="" class="btn btn-project">Code</a>
+              <p class='p4'>React app with Ergast Api, project I did for practical part of course in Smart School</p>
+
             </div>
           </div>
         </div>
