@@ -238,9 +238,9 @@ textarea:focus {
   z-index: -1;
   height: 15px;
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   .project {
-    width: 350px;
+    width: 90vw;
   }
 }
 
