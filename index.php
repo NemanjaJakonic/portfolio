@@ -128,7 +128,7 @@ if(isset($_POST['sendemail']))
           <div id="project2">
             <h3>Rock, paper, scissors</h3>
             <p class="p2">
-              Technologies used: HTMl, CSS, Bootstrap 4, Vanilla Javascript
+              Technologies used: HTMl, CSS, Bootstrap 4, Javascript
             </p>
             <div class="project project2">
               <div class="overlay"></div>

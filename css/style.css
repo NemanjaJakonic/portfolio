@@ -171,23 +171,25 @@ textarea:focus {
 .project:hover .btn-project {
   z-index: 1;
 }
+
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 10px;
   transition: all 0.7s ease;
 }
 .project:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .project.btn {
   padding: 30px 40px;
 }
 
 .project1 {
-  background-image: url("/img/project1.png");
+  background-image: url("../img/project1.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -196,7 +198,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project2 {
-  background-image: url("/img/project2.png");
+  background-image: url("../img/project2.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -205,7 +207,7 @@ textarea:focus {
   border: 1px solid #0cebeb;
 }
 .project3 {
-  background-image: url("/img/project3.png");
+  background-image: url("../img/project3.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -214,7 +216,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project4 {
-  background-image: url("/img/project4.png");
+  background-image: url("../img/project4.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -226,7 +228,8 @@ textarea:focus {
 .projects p {
   opacity: 0;
   margin: 0;
-  /* padding: 7px; */
+  z-index: 2;
+ 
 }
 .project p{
   padding: 7px;
