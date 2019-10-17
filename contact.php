@@ -31,10 +31,10 @@ if(isset($_POST['submit']))
 
     if($sendgrid->send($email));
     {
-      
+        $_SESSION['success'] = 'Email sent successfully!';
         header('Location: index.php');
         exit;
-        $_SESSION['success'] = 'Email sent successfully!';
+        
     }
 }
 
