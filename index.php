@@ -1,5 +1,5 @@
 <?php
-include_once ('contact.php');
+ require 'contact.php';
 $success = '';
 ?>
 
