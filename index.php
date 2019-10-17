@@ -160,7 +160,7 @@ require 'contact.php';
             <input
             type="text"
             name="name"
-            value="<?php $name?>"
+            
             placeholder="Enter your name..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
@@ -172,7 +172,7 @@ require 'contact.php';
           <input
             type="email"
             name="email"
-            value="<?php $email?>"
+           
             placeholder="Enter your email..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your email...'"
@@ -183,7 +183,7 @@ require 'contact.php';
           <br />
           <textarea
             name="message"
-            value="<?php $message?>"
+            
             placeholder="Enter your message..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your message...'"
