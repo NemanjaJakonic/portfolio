@@ -31,8 +31,7 @@ if(isset($_POST['submit']))
     if($sendgrid->send($email));
     {
         echo 'Email sent successfully!';
-        header('Location: index.php');
-        exit;
+       
     }
 }
 

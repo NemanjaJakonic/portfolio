@@ -130,7 +130,8 @@ $(document).ready(function(){
                  method:"POST",  
                  data:{name:name, message:message},  
                  success:function(data){  
-                      $("form").trigger("reset");  
+                      $("form").trigger("reset"); 
+                      window.location.href ='http://nemanjajakonic.herokuapp.com/index.php'
                       $('#success_message').fadeIn().html(data);  
                       setTimeout(function(){  
                            $('#success_message').fadeOut("Slow");  
