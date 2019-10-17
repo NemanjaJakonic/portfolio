@@ -7,7 +7,7 @@ require 'vendor/autoload.php';
 include_once('./credentials.php');
 
 session_start();
-$name = $email = $message = $success = "";
+$name = $email = $message = "";
 
 
 
@@ -32,7 +32,7 @@ if(isset($_POST['submit']))
     if($sendgrid->send($email));
     {
         $_SESSION['success'] = 'Email sent successfully!';
-        header('Location: index.php');
+        header('Location: index.php#contact');
         exit;
         
     }

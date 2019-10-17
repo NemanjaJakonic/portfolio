@@ -167,10 +167,11 @@
             type="text"
             name="name"
             id="name"
+            value="<?php $name?>"
             placeholder="Enter your name..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
-            
+            required
             
           />
           <br />
@@ -179,11 +180,11 @@
             type="email"
             name="email"
             id="email"
-            
+            value="<?php $email?>"
             placeholder="Enter your email..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your email...'"
-            
+            required
           />
           <br />
           <p>Message:</p>
@@ -191,12 +192,13 @@
           <textarea
             name="message"
             id="message"
+            value="<?php $message?>"
             placeholder="Enter your message..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your message...'"
             cols="30"
             rows="5"
-            
+            required
           ></textarea>
           <br />
           <input
@@ -206,8 +208,7 @@
             class="btn submit"
             id="submit"
           />
-          <p id="success_message" class="text-success"></p>
-          <p id="error_message" class="text-danger"></p>  
+     
                    
         </form>
        
