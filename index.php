@@ -199,8 +199,9 @@ $success = '';
             value="Submit"
             class="btn submit"
           />
+          <p><?php echo $success?></p>
         </form>
-        <p><?php $success?></p>
+       
         <footer>
           <a href="https://github.com/NemanjaJakonic" target="_blank"
             ><i class="fab fa-github fa-2x"></i
