@@ -1,6 +1,5 @@
 <?php
  require 'contact.php';
-$success = '';
 ?>
 
 <!DOCTYPE html>
