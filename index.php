@@ -155,7 +155,7 @@
       <section id="contact">
         <h2>Contact me:</h2>
 
-        <form method="post" name="FrmEnquiry" id="FrmEnquiry" action="" onsubmit="sendEnquiryform();">
+        <form method="post" action="">
           <p>Name:</p>
             <input
             type="text"
@@ -164,7 +164,7 @@
             placeholder="Enter your name..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
-            required
+            
             
           />
           <br />
@@ -173,10 +173,11 @@
             type="email"
             name="email"
             id="email"
+            value="$"
             placeholder="Enter your email..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your email...'"
-            required
+            
           />
           <br />
           <p>Message:</p>
@@ -189,7 +190,7 @@
             onblur="this.placeholder = 'Enter your message...'"
             cols="30"
             rows="5"
-            required
+            
           ></textarea>
           <br />
           <input
@@ -199,7 +200,8 @@
             class="btn submit"
             id="submit"
           />
-          <p id="successMessage"></p>
+          <span id="error_message" class="text-danger"></span>  
+                     <span id="success_message" class="text-success"></span>
         </form>
        
         <footer>

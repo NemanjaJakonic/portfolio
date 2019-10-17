@@ -93,22 +93,50 @@ $(".project4").one("mouseenter", function() {
 // $( ".project1" ).off( "mouseenter mouseleave" );
 /* Otherwise just put the config content (json): */
 
-function sendEnquiryform() {
-  var name = $("#name").val();
-  var email = $("#email").val();
-  var message = $("#message").val();
-  $.post(
-    "contact.php",
-    "name=" + name + "&email=" + email + "&message=" + message,
-    function(result, status, xhr) {
-      if (status.toLowerCase() == "error".toLowerCase()) {
-        alert("An Error Occurred..");
-      } else {
-        // alert("Email sent successfully");
-        $("#successMessage").html("Email sent successfully");
-      }
-    }
-  ).fail(function() {
-    alert("something went wrong. Please try again");
-  });
-}
+// function sendEnquiryform() {
+//   var name = $("#name").val();
+//   var email = $("#email").val();
+//   var message = $("#message").val();
+//   $.post(
+//     "contact.php",
+//     "name=" + name + "&email=" + email + "&message=" + message,
+//     function(result, status, xhr) {
+//       if (status.toLowerCase() == "error".toLowerCase()) {
+//         alert("An Error Occurred..");
+//       } else {
+//         // alert("Email sent successfully");
+//         $("#successMessage").html("Email sent successfully");
+//       }
+//     }
+//   ).fail(function() {
+//     alert("something went wrong. Please try again");
+//   });
+// }
+
+$(document).ready(function(){  
+  $('#submit').click(function(){  
+       var name = $('#name').val();  
+       var email = $("#email").val();
+       var message = $('#message').val();  
+       if(name == '' || email == '' || message == '')  
+       {  
+            $('#error_message').html("All Fields are required");  
+       }  
+       else  
+       {  
+            $('#error_message').html('');  
+            $.ajax({  
+                 url:"contact.php",  
+                 method:"POST",  
+                 data:{name:name, message:message},  
+                 success:function(data){  
+                      $("form").trigger("reset");  
+                      $('#success_message').fadeIn().html(data);  
+                      setTimeout(function(){  
+                           $('#success_message').fadeOut("Slow");  
+                      }, 2000);  
+                 }  
+            });  
+       }  
+  });  
+});
