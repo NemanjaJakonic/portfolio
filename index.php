@@ -21,6 +21,7 @@
 
     <div id="wrapper">
       <section id="main">
+      <p id="success_message" class="text-success"></p>
         <h1>Hello World</h1>
         <h2 id="t1">My name is Nemanja Jakonić</h2>
         <h3 id="t2">
@@ -200,8 +201,8 @@
             class="btn submit"
             id="submit"
           />
-          <span id="error_message" class="text-danger"></span>  
-                     <span id="success_message" class="text-success"></span>
+          <p id="error_message" class="text-danger"></p>  
+                   
         </form>
        
         <footer>
