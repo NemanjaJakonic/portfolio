@@ -8,7 +8,7 @@ include_once('./credentials.php');
 
 session_start();
 $name = $email = $message = $success = "";
-$_SESSION['success'] = 'Email sent successfully!';
+
 
 
 if(isset($_POST['submit']))
@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
       
         header('Location: index.php');
         exit;
-        // echo 'Email sent successfully!';
+        $_SESSION['success'] = 'Email sent successfully!';
     }
 }
 
