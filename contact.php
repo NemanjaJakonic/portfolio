@@ -30,7 +30,7 @@ if(isset($_POST['sendemail']))
 
     if($sendgrid->send($email));
     {
-        $success = 'Message sent, thank you!';
+        echo 'Email sent successfully!'
         header('Location: index.php');
         exit;
     }
