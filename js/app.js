@@ -113,31 +113,32 @@ $(".project4").one("mouseenter", function() {
 //   });
 // }
 
-$(document).ready(function(){  
-  $('#submit').click(function(){  
-       var name = $('#name').val();  
-       var email = $("#email").val();
-       var message = $('#message').val();  
-       if(name == '' || email == '' || message == '')  
-       {  
-            $('#error_message').html("All Fields are required");  
-       }  
-       else  
-       {  
-            $('#error_message').html('');  
-            $.ajax({  
-                 url:"contact.php",  
-                 method:"POST",  
-                 data:{name:name, message:message},  
-                 success:function(data){  
-                      $("form").trigger("reset"); 
-                      window.location.href ='http://nemanjajakonic.herokuapp.com/index.php'
-                      $('#success_message').fadeIn().html(data);  
-                      setTimeout(function(){  
-                           $('#success_message').fadeOut("Slow");  
-                      }, 2000);  
-                 }  
-            });  
-       }  
-  });  
-});
+// $(document).ready(function(){  
+//   $('#submit').click(function(){  
+//     e.preventDefault();
+//        var name = $('#name').val();  
+//        var email = $("#email").val();
+//        var message = $('#message').val();  
+//        if(name == '' || email == '' || message == '')  
+//        {  
+//             $('#error_message').html("All Fields are required");  
+//        }  
+//        else  
+//        {  
+//             $('#error_message').html('');  
+//             $.ajax({  
+//                  url:"contact.php",  
+//                  method:"POST",  
+//                  data:{name:name, message:message},  
+//                  success:function(data){  
+//                       $("form").trigger("reset"); 
+//                       window.location.href ='http://nemanjajakonic.herokuapp.com/index.php'
+//                       $('#success_message').fadeIn().html(data);  
+//                       setTimeout(function(){  
+//                            $('#success_message').fadeOut("Slow");  
+//                       }, 2000);  
+//                  }  
+//             });  
+//        }  
+//   });  
+// });

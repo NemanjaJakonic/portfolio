@@ -6,8 +6,9 @@ require 'vendor/autoload.php';
 // You need this API_KEY created on the Sendgrid website.
 include_once('./credentials.php');
 
-
+session_start();
 $name = $email = $message = $success = "";
+$_SESSION['success'] = 'Email sent successfully!';
 
 
 if(isset($_POST['submit']))
@@ -30,8 +31,10 @@ if(isset($_POST['submit']))
 
     if($sendgrid->send($email));
     {
-        echo 'Email sent successfully!';
-       
+      
+        header('Location: index.php');
+        exit;
+        // echo 'Email sent successfully!';
     }
 }
 

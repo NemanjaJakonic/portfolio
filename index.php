@@ -1,5 +1,10 @@
 <?php
  require 'contact.php';
+ session_start();
+ if (isset($_SESSION['success']) && ! empty($_SESSION['success'])) {
+  echo htmlentities($_SESSION['success']);
+  unset($_SESSION['success']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +26,7 @@
 
     <div id="wrapper">
       <section id="main">
-      <p id="success_message" class="text-success"></p>
+      
         <h1>Hello World</h1>
         <h2 id="t1">My name is Nemanja Jakonić</h2>
         <h3 id="t2">
@@ -156,7 +161,7 @@
       <section id="contact">
         <h2>Contact me:</h2>
 
-        <form>
+        <form method='post' action='contact.php'>
           <p>Name:</p>
             <input
             type="text"
@@ -174,7 +179,7 @@
             type="email"
             name="email"
             id="email"
-            value="$"
+            
             placeholder="Enter your email..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your email...'"
@@ -201,6 +206,7 @@
             class="btn submit"
             id="submit"
           />
+          <p id="success_message" class="text-success"></p>
           <p id="error_message" class="text-danger"></p>  
                    
         </form>
