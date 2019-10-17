@@ -199,7 +199,7 @@
             class="btn submit"
             id="submit"
           />
-          <span id="successMessage"> </span>
+          <p id="successMessage">kita</p>
         </form>
        
         <footer>

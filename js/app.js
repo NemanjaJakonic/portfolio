@@ -104,8 +104,8 @@ function sendEnquiryform() {
       if (status.toLowerCase() == "error".toLowerCase()) {
         alert("An Error Occurred..");
       } else {
-        alert("Email sent successfully");
-        $("#successMessage").html(result);
+        // alert("Email sent successfully");
+        $("#successMessage").html("Email sent successfully");
       }
     }
   ).fail(function() {
