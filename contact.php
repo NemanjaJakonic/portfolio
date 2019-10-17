@@ -1,10 +1,11 @@
 <?php 
-print_r($_POST);
+
 // You need to install the sendgrid client library so run: composer require sendgrid/sendgrid
 require 'vendor/autoload.php';
 // contains a variable called: $API_KEY that is the API Key.
 // You need this API_KEY created on the Sendgrid website.
 include_once('./credentials.php');
+
 
 $name = $email = $message = $success = "";
 
@@ -30,7 +31,7 @@ if(isset($_POST['sendemail']))
     if($sendgrid->send($email));
     {
         $success = 'Message sent, thank you!';
-        $name = $email = $message = '';
+        $_POST = array();
     }
 }
 
