@@ -1,35 +1,5 @@
 <?php
-
-// You need to install the sendgrid client library so run: composer require sendgrid/sendgrid
-require 'vendor/autoload.php';
-// contains a variable called: $API_KEY that is the API Key.
-// You need this API_KEY created on the Sendgrid website.
-include_once('./credentials.php');
-
-
-if(isset($_POST['sendemail']))
-{
-
-  $name =$_POST['name'];
-  $email_id =$_POST['email'];
-  $message =$_POST['message'];
-
-
-
-    $email = new \SendGrid\Mail\Mail(); 
-    $email->setFrom("nemanjajakonic@gmail.com", "$name");
-    $email->setSubject("Contact from : ".$name." <".$email_id.">");
-    $email->addTo( "nemanjajakonic@gmail.com", "Nemanja Jakonić");
-    $email->addContent("text/plain", $message);
-    // $email->addContent(
-    //     "text/html", );
-    $sendgrid = new \SendGrid($API_KEY);
-
-    if($sendgrid->send($email));
-    {
-      echo "Email sent successfully";
-    }
-}
+require 'contact.php';
 ?>
 
 <!DOCTYPE html>
@@ -185,35 +155,41 @@ if(isset($_POST['sendemail']))
       <section id="contact">
         <h2>Contact me:</h2>
 
-        <form method="post" action="">
+        <form method="post" action="<?php $_SERVER['PHP_SELF'];?>">
           <p>Name:</p>
-          <input
+            <input
             type="text"
             name="name"
+            value="<?php $name?>"
             placeholder="Enter your name..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
+            required
+            
           />
           <br />
           <p>Email:</p>
           <input
             type="email"
             name="email"
+            value="<?php $email?>"
             placeholder="Enter your email..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your email...'"
+            required
           />
           <br />
           <p>Message:</p>
           <br />
           <textarea
             name="message"
-            id=""
+            value="<?php $message?>"
             placeholder="Enter your message..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your message...'"
             cols="30"
             rows="5"
+            required
           ></textarea>
           <br />
           <input
@@ -223,6 +199,7 @@ if(isset($_POST['sendemail']))
             class="btn submit"
           />
         </form>
+        <p><?php $success?></p>
         <footer>
           <a href="https://github.com/NemanjaJakonic" target="_blank"
             ><i class="fab fa-github fa-2x"></i

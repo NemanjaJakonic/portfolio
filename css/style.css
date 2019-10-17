@@ -120,6 +120,9 @@ h3 {
 .logo img {
   height: 25vh;
 }
+#about p{
+  text-align: justify;
+}
 
 #about {
   display: flex;
