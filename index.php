@@ -1,5 +1,6 @@
 <?php
-require 'contact.php';
+include_once ('contact.php');
+$success = '';
 ?>
 
 <!DOCTYPE html>
@@ -155,7 +156,7 @@ require 'contact.php';
       <section id="contact">
         <h2>Contact me:</h2>
 
-        <form method="post" action="">
+        <form method="post" action="contact.php">
           <p>Name:</p>
             <input
             type="text"
