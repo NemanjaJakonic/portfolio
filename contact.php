@@ -10,7 +10,7 @@ include_once('./credentials.php');
 $name = $email = $message = $success = "";
 
 
-if(isset($_POST['sendemail']))
+if(isset($_POST['submit']))
 {
 
   $name =$_POST['name'];

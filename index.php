@@ -155,12 +155,12 @@
       <section id="contact">
         <h2>Contact me:</h2>
 
-        <form method="post" action="contact.php">
+        <form method="post" name="FrmEnquiry" id="FrmEnquiry" action="" onsubmit="sendEnquiryform();">
           <p>Name:</p>
             <input
             type="text"
             name="name"
-            
+            id="name"
             placeholder="Enter your name..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
@@ -172,7 +172,7 @@
           <input
             type="email"
             name="email"
-           
+            id="email"
             placeholder="Enter your email..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your email...'"
@@ -183,7 +183,7 @@
           <br />
           <textarea
             name="message"
-            
+            id="message"
             placeholder="Enter your message..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your message...'"
@@ -194,11 +194,12 @@
           <br />
           <input
             type="submit"
-            name="sendemail"
+            name="submit"
             value="Submit"
             class="btn submit"
+            id="submit"
           />
-          <p><?php echo $success?></p>
+          <span id="successMessage"> </span>
         </form>
        
         <footer>
