@@ -56,24 +56,22 @@
         <div>
           <h2>About:</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
-            delectus magnam, rem obcaecati est illum mollitia consequatur
-            excepturi nulla voluptatum doloremque alias dolore atque dignissimos
-            cum sint debitis enim ipsum? Possimus, veritatis sapiente, ratione
-            id quae unde quo illum nihil excepturi reiciendis saepe ipsam sed
-            obcaecati, totam atque ipsa. Harum ipsam quae nesciunt quia? Nisi
-            officia modi maiores magnam natus. Non accusantium sequi dolor
-            incidunt veniam sint. Nulla culpa voluptates aliquam dolores labore
-            tempora voluptas iure natus! Possimus ratione voluptate corrupti rem
-            animi vitae! Culpa ipsam tempore provident suscipit magni. Explicabo
-            aliquam adipisci veniam corporis mollitia reprehenderit soluta
-            perspiciatis dignissimos quidem libero dolorem quibusdam velit vero,
-            vel dolores expedita, eligendi nulla dolorum corrupti commodi quam
-            minus quae. Iusto, enim illum? Recusandae debitis, voluptate officia
-            beatae quidem ipsum libero itaque enim illum atque non praesentium
-            veniam deserunt placeat, commodi dolore. Velit dignissimos labore ea
-            assumenda dicta qui, ratione iste eligendi quos.
+          I'm Nemanja Jakonić, an ambitious self-taught front-end developer from Novi Sad looking for a full-time web development role.
+
+I enjoy making beautiful websites using HTML, CSS, PHP, JavaScript and jQuery. My code is always clean, maintainable & cross-browser friendly.
+
+My current passion is delving further into JavaScript, with a particular focus on ReactJS.
+
+When I'm not coding you'll find me swimming,or in a dojo training kendo.
           </p>
+          <h5>Technologies I currently know and improving :</h5>
+          <i class="fab fa-html5 fa-2x"></i>
+          <i class="fab fa-css3-alt fa-2x"></i>
+          <i class="fab fa-js-square fa-2x"></i>
+          <i class="fab fa-bootstrap fa-2x"></i>
+          <i class="fab fa-php fa-2x"></i>
+          <i class="fab fa-react fa-2x"></i>
+          <i class="fab fa-magento fa-2x"></i>
         </div>
       </section>
       <section id="projects">

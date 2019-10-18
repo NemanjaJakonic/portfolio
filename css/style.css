@@ -10,6 +10,7 @@ body {
   z-index: 1;
   color: white;
   font-family: "VT323", monospace;
+  font-size: 1.1rem;
 }
 h1,
 h2,
@@ -120,8 +121,9 @@ h3 {
 .logo img {
   height: 25vh;
 }
-#about p{
+#about p {
   text-align: justify;
+  padding: 30px;
 }
 pre {
   text-align: center;
@@ -129,9 +131,11 @@ pre {
 #about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   font-size: 1.5rem;
+  height: 60vh;
+  margin-bottom: 60px;
 }
 #contact {
   width: 100%;
@@ -234,9 +238,8 @@ textarea:focus {
   opacity: 0;
   margin: 0;
   z-index: 2;
- 
 }
-.project p{
+.project p {
   padding: 7px;
 }
 .btn-project {
