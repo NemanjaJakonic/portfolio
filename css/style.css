@@ -131,10 +131,8 @@ pre {
 #about {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   text-align: center;
   font-size: 1.5rem;
-  /* height: 100vh; */
   margin-bottom: 60px;
 }
 #contact {
@@ -233,11 +231,22 @@ textarea:focus {
   justify-content: center;
   border: 1px solid #0cebeb;
 }
+.project5 {
+  background-image: url("../img/project5.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #0cebeb;
+}
 
 .projects p {
   opacity: 0;
   margin: 0;
   z-index: 2;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .project p {
   padding: 7px;
@@ -302,9 +311,7 @@ textarea:focus {
   }
   .secondary-btn {
     padding: 5px 7px;
-    /* bottom: 5%;
-    right: 20%; */
-  }
+     }
   #main,
   #about,
   #projects,
@@ -314,4 +321,7 @@ textarea:focus {
   .btn-project {
     padding: 20px 30px;
   }
+}
+.technologies {
+  padding: 30px;
 }

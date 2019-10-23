@@ -27,7 +27,6 @@
 
     <div id="wrapper">
       <section id="main">
-      
         <h1>Hello World</h1>
         <h2 id="t1">My name is Nemanja Jakonić</h2>
         <h3 id="t2">
@@ -63,44 +62,44 @@
             jQuery. My code is always clean, maintainable & cross-browser
             friendly. My current passion is delving further into JavaScript,
             with a particular focus on ReactJS. When I'm not coding you'll find
-            me swimming,or in a dojo training kendo.
+            me swimming, or in a dojo training kendo.
           </p>
-          <h5>Technologies I currently know and improving :</h5>
-          <i class="fab fa-html5 fa-2x"></i>
-          <i class="fab fa-css3-alt fa-2x"></i>
-          <i class="fab fa-js-square fa-2x"></i>
-          <i class="fab fa-bootstrap fa-2x"></i>
-          <i class="fab fa-php fa-2x"></i>
-          <i class="fab fa-react fa-2x"></i>
-          <i class="fab fa-magento fa-2x"></i>
+          <div class="technologies">
+            <h5>Technologies I currently know and improving :</h5>
+            <i class="fab fa-html5 fa-2x"></i>
+            <i class="fab fa-css3-alt fa-2x"></i>
+            <i class="fab fa-js-square fa-2x"></i>
+            <i class="fab fa-bootstrap fa-2x"></i>
+            <i class="fab fa-php fa-2x"></i>
+            <i class="fab fa-react fa-2x"></i>
+            <i class="fab fa-magento fa-2x"></i>
+          </div>
         </div>
         <h2>Certificates:</h2>
         <div id="certificates">
           <div class="certificate">
             <div class="overlay-cert"></div>
-            <img src="img/certificate1.jpg" alt=""
-              />
-              <a
-                href="img/certificate1.jpg"
-                id="certificate-tile"
-                class="magnifying-glass-icon"
-                data-featherlight="image"
-                > <i class="fa fa-search fa-2x"></i></a>
-             
-            
+            <img src="img/certificate1.jpg" alt="" />
+            <a
+              href="img/certificate1.jpg"
+              id="certificate-tile"
+              class="magnifying-glass-icon"
+              data-featherlight="image"
+            >
+              <i class="fa fa-search fa-2x"></i
+            ></a>
           </div>
           <div class="certificate">
             <div class="overlay-cert"></div>
-            <img src="img/certificate2.jpg" alt=""
-              />
-              <a
-                href="img/certificate2.jpg"
-                id="certificate-tile"
-                class="magnifying-glass-icon"
-                data-featherlight="image"
-                > <i class="fa fa-search fa-2x"></i></a>
-             
-            
+            <img src="img/certificate2.jpg" alt="" />
+            <a
+              href="img/certificate2.jpg"
+              id="certificate-tile"
+              class="magnifying-glass-icon"
+              data-featherlight="image"
+            >
+              <i class="fa fa-search fa-2x"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -190,6 +189,29 @@
               </p>
             </div>
           </div>
+          <div id="project5">
+            <h3>LyricsApp</h3>
+            <p class="p5">Technologies used: ReactJS, Bootstrap 4</p>
+            <div class="project project5">
+              <div class="overlay"></div>
+              <a
+                href="https://lyricsapp-nemanja.netlify.com/"
+                target="_blank"
+                class="btn btn-project"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/NemanjaJakonic/LyricsApp"
+                target="_blank"
+                class="btn btn-project"
+                >Code</a
+              >
+              <p class="p5">
+                React app with LastFm and Lyrics.ovh API, search for song
+                lyrics, and info about album, track and artist
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contact">
@@ -197,7 +219,7 @@
 
         <form method="post" action="contact.php">
           <p>Name:</p>
-            <input
+          <input
             type="text"
             name="name"
             id="name"
@@ -241,8 +263,6 @@
             class="btn submit"
             id="submit"
           />
-     
-                   
         </form>
         <footer>
           <a href="https://github.com/NemanjaJakonic" target="_blank"

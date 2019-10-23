@@ -71,6 +71,10 @@ $(document).ready(function() {
     $('.p4').css({ opacity: '1' });
     baffle('.p4').reveal(500);
   });
+  $('.project5').one('mouseenter', function() {
+    $('.p5').css({ opacity: '1' });
+    baffle('.p5').reveal(500);
+  });
 
   setTimeout(function() {
     $('pre').hide();
