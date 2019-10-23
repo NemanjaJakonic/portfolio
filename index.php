@@ -205,11 +205,7 @@ When I'm not coding you'll find me swimming,or in a dojo training kendo.
       <section id="contact">
         <h2>Contact me:</h2>
 
-<<<<<<< HEAD
         <form method="post" action="contact.php">
-=======
-        <form method='post' action='contact.php'>
->>>>>>> 930f7ac798b032e2a8e011b38ce54386ea278ad3
           <p>Name:</p>
             <input
             type="text"
@@ -220,10 +216,6 @@ When I'm not coding you'll find me swimming,or in a dojo training kendo.
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
             required
-<<<<<<< HEAD
-=======
-            
->>>>>>> 930f7ac798b032e2a8e011b38ce54386ea278ad3
           />
           <br />
           <p>Email:</p>
@@ -262,11 +254,6 @@ When I'm not coding you'll find me swimming,or in a dojo training kendo.
      
                    
         </form>
-<<<<<<< HEAD
-
-=======
-       
->>>>>>> 930f7ac798b032e2a8e011b38ce54386ea278ad3
         <footer>
           <a href="https://github.com/NemanjaJakonic" target="_blank"
             ><i class="fab fa-github fa-2x"></i
