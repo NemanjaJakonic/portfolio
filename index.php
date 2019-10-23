@@ -27,6 +27,7 @@
 
     <div id="wrapper">
       <section id="main">
+      
         <h1>Hello World</h1>
         <h2 id="t1">My name is Nemanja Jakonić</h2>
         <h3 id="t2">
@@ -56,6 +57,7 @@
         <div>
           <h2>About:</h2>
           <p>
+<<<<<<< HEAD
             I'm Nemanja Jakonić, an ambitious self-taught front-end developer
             from Novi Sad looking for a full-time web development role. I enjoy
             making beautiful websites using HTML, CSS, PHP, JavaScript and
@@ -63,6 +65,15 @@
             friendly. My current passion is delving further into JavaScript,
             with a particular focus on ReactJS. When I'm not coding you'll find
             me swimming,or in a dojo training kendo.
+=======
+          I'm Nemanja Jakonić, an ambitious self-taught front-end developer from Novi Sad looking for a full-time web development role.
+
+I enjoy making beautiful websites using HTML, CSS, PHP, JavaScript and jQuery. My code is always clean, maintainable & cross-browser friendly.
+
+My current passion is delving further into JavaScript, with a particular focus on ReactJS.
+
+When I'm not coding you'll find me swimming,or in a dojo training kendo.
+>>>>>>> 930f7ac798b032e2a8e011b38ce54386ea278ad3
           </p>
           <h5>Technologies I currently know and improving :</h5>
           <i class="fab fa-html5 fa-2x"></i>
@@ -194,9 +205,13 @@
       <section id="contact">
         <h2>Contact me:</h2>
 
+<<<<<<< HEAD
         <form method="post" action="contact.php">
+=======
+        <form method='post' action='contact.php'>
+>>>>>>> 930f7ac798b032e2a8e011b38ce54386ea278ad3
           <p>Name:</p>
-          <input
+            <input
             type="text"
             name="name"
             id="name"
@@ -205,6 +220,10 @@
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
             required
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 930f7ac798b032e2a8e011b38ce54386ea278ad3
           />
           <br />
           <p>Email:</p>
@@ -240,8 +259,14 @@
             class="btn submit"
             id="submit"
           />
+     
+                   
         </form>
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> 930f7ac798b032e2a8e011b38ce54386ea278ad3
         <footer>
           <a href="https://github.com/NemanjaJakonic" target="_blank"
             ><i class="fab fa-github fa-2x"></i
