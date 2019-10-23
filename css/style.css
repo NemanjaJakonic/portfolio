@@ -10,6 +10,7 @@ body {
   z-index: 1;
   color: white;
   font-family: "VT323", monospace;
+  font-size: 1.1rem;
 }
 h1,
 h2,
@@ -120,13 +121,21 @@ h3 {
 .logo img {
   height: 25vh;
 }
-
+#about p {
+  text-align: justify;
+  padding: 30px;
+}
+pre {
+  text-align: center;
+}
 #about {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   font-size: 1.5rem;
+  /* height: 100vh; */
+  margin-bottom: 60px;
 }
 #contact {
   width: 100%;
@@ -229,18 +238,55 @@ textarea:focus {
   opacity: 0;
   margin: 0;
   z-index: 2;
- 
 }
-.project p{
+.project p {
   padding: 7px;
 }
 .btn-project {
   z-index: -1;
   height: 15px;
 }
+
+.overlay-cert {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.7s ease;
+}
+
+.certificate {
+  position: relative;
+  display: inline-block;
+  margin: 25px;
+}
+
+.magnifying-glass-icon {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.certificate:hover .overlay-cert {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #0cebeb;
+}
+.magnifying-glass-icon:hover {
+  color: #cb356b;
+}
+.certificate img {
+  width: 400px;
+}
+
 @media only screen and (max-width: 768px) {
   .project {
     width: 90vw;
+  }
+  .certificate img {
+    width: 350px;
   }
 }
 
@@ -269,10 +315,3 @@ textarea:focus {
     padding: 20px 30px;
   }
 }
-
-/* #main,
-#about,
-#projects,
-#contacts {
-  height: 100vh;
-} */

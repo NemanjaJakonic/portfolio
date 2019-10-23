@@ -1,34 +1,9 @@
 <?php
-
-// You need to install the sendgrid client library so run: composer require sendgrid/sendgrid
-require 'vendor/autoload.php';
-// contains a variable called: $API_KEY that is the API Key.
-// You need this API_KEY created on the Sendgrid website.
-include_once('./credentials.php');
-
-
-if(isset($_POST['sendemail']))
-{
-
-  $name =$_POST['name'];
-  $email_id =$_POST['email'];
-  $message =$_POST['message'];
-
-
-
-    $email = new \SendGrid\Mail\Mail(); 
-    $email->setFrom("nemanjajakonic@gmail.com", "$name");
-    $email->setSubject("Contact from : ".$name." <".$email_id.">");
-    $email->addTo( "nemanjajakonic@gmail.com", "Nemanja Jakonić");
-    $email->addContent("text/plain", $message);
-    // $email->addContent(
-    //     "text/html", );
-    $sendgrid = new \SendGrid($API_KEY);
-
-    if($sendgrid->send($email));
-    {
-      echo "Email sent successfully";
-    }
+ require 'contact.php';
+ session_start();
+ if (isset($_SESSION['success']) && ! empty($_SESSION['success'])) {
+  echo htmlentities($_SESSION['success']);
+  unset($_SESSION['success']);
 }
 ?>
 
@@ -39,6 +14,7 @@ if(isset($_POST['sendemail']))
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="css/featherlight.css" />
     <script
       src="https://kit.fontawesome.com/7997da006a.js"
       crossorigin="anonymous"
@@ -80,24 +56,51 @@ if(isset($_POST['sendemail']))
         <div>
           <h2>About:</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
-            delectus magnam, rem obcaecati est illum mollitia consequatur
-            excepturi nulla voluptatum doloremque alias dolore atque dignissimos
-            cum sint debitis enim ipsum? Possimus, veritatis sapiente, ratione
-            id quae unde quo illum nihil excepturi reiciendis saepe ipsam sed
-            obcaecati, totam atque ipsa. Harum ipsam quae nesciunt quia? Nisi
-            officia modi maiores magnam natus. Non accusantium sequi dolor
-            incidunt veniam sint. Nulla culpa voluptates aliquam dolores labore
-            tempora voluptas iure natus! Possimus ratione voluptate corrupti rem
-            animi vitae! Culpa ipsam tempore provident suscipit magni. Explicabo
-            aliquam adipisci veniam corporis mollitia reprehenderit soluta
-            perspiciatis dignissimos quidem libero dolorem quibusdam velit vero,
-            vel dolores expedita, eligendi nulla dolorum corrupti commodi quam
-            minus quae. Iusto, enim illum? Recusandae debitis, voluptate officia
-            beatae quidem ipsum libero itaque enim illum atque non praesentium
-            veniam deserunt placeat, commodi dolore. Velit dignissimos labore ea
-            assumenda dicta qui, ratione iste eligendi quos.
+            I'm Nemanja Jakonić, an ambitious self-taught front-end developer
+            from Novi Sad looking for a full-time web development role. I enjoy
+            making beautiful websites using HTML, CSS, PHP, JavaScript and
+            jQuery. My code is always clean, maintainable & cross-browser
+            friendly. My current passion is delving further into JavaScript,
+            with a particular focus on ReactJS. When I'm not coding you'll find
+            me swimming,or in a dojo training kendo.
           </p>
+          <h5>Technologies I currently know and improving :</h5>
+          <i class="fab fa-html5 fa-2x"></i>
+          <i class="fab fa-css3-alt fa-2x"></i>
+          <i class="fab fa-js-square fa-2x"></i>
+          <i class="fab fa-bootstrap fa-2x"></i>
+          <i class="fab fa-php fa-2x"></i>
+          <i class="fab fa-react fa-2x"></i>
+          <i class="fab fa-magento fa-2x"></i>
+        </div>
+        <h2>Certificates:</h2>
+        <div id="certificates">
+          <div class="certificate">
+            <div class="overlay-cert"></div>
+            <img src="img/certificate1.jpg" alt=""
+              />
+              <a
+                href="img/certificate1.jpg"
+                id="certificate-tile"
+                class="magnifying-glass-icon"
+                data-featherlight="image"
+                > <i class="fa fa-search fa-2x"></i></a>
+             
+            
+          </div>
+          <div class="certificate">
+            <div class="overlay-cert"></div>
+            <img src="img/certificate2.jpg" alt=""
+              />
+              <a
+                href="img/certificate2.jpg"
+                id="certificate-tile"
+                class="magnifying-glass-icon"
+                data-featherlight="image"
+                > <i class="fa fa-search fa-2x"></i></a>
+             
+            
+          </div>
         </div>
       </section>
       <section id="projects">
@@ -105,7 +108,9 @@ if(isset($_POST['sendemail']))
         <div class="projects">
           <div id="project1">
             <h3>Kokoro</h3>
-            <p class="p1">Technologies used: HTMl, CSS, Javascript, Jquery</p>
+            <p class="p1">
+              Technologies used: HTMl, CSS, Javascript, Jquery
+            </p>
             <div class="project project1">
               <div class="overlay"></div>
               <a
@@ -120,9 +125,11 @@ if(isset($_POST['sendemail']))
                 class="btn btn-project"
                 >Code</a
               >
-              <p class="p1">Project I did for kendo club I train in.Single page, fully responsive.</p>
+              <p class="p1">
+                Project I did for kendo club I train in.Single page, fully
+                responsive.
+              </p>
             </div>
-    
           </div>
 
           <div id="project2">
@@ -144,8 +151,9 @@ if(isset($_POST['sendemail']))
                 class="btn btn-project"
                 >Code</a
               >
-              <p class='p2'>First Javascript project, well-known game rock, paper, scissors</p>
-
+              <p class="p2">
+                First Javascript project, well-known game rock, paper, scissors
+              </p>
             </div>
           </div>
           <div id="project3">
@@ -165,8 +173,7 @@ if(isset($_POST['sendemail']))
                 class="btn btn-project"
                 >Code</a
               >
-              <p class='p3'>Simple weather app with OpenWeather Api</p>
-
+              <p class="p3">Simple weather app with OpenWeather Api</p>
             </div>
           </div>
           <div id="project4">
@@ -176,8 +183,10 @@ if(isset($_POST['sendemail']))
               <div class="overlay"></div>
               <a href="" class="btn btn-project">Demo</a>
               <a href="" class="btn btn-project">Code</a>
-              <p class='p4'>React app with Ergast Api, project I did for practical part of course in Smart School</p>
-
+              <p class="p4">
+                React app with Ergast Api, project I did for practical part of
+                course in Smart School
+              </p>
             </div>
           </div>
         </div>
@@ -185,44 +194,54 @@ if(isset($_POST['sendemail']))
       <section id="contact">
         <h2>Contact me:</h2>
 
-        <form method="post" action="">
+        <form method="post" action="contact.php">
           <p>Name:</p>
           <input
             type="text"
             name="name"
+            id="name"
+            value="<?php $name?>"
             placeholder="Enter your name..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter name..'"
+            required
           />
           <br />
           <p>Email:</p>
           <input
             type="email"
             name="email"
+            id="email"
+            value="<?php $email?>"
             placeholder="Enter your email..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your email...'"
+            required
           />
           <br />
           <p>Message:</p>
           <br />
           <textarea
             name="message"
-            id=""
+            id="message"
+            value="<?php $message?>"
             placeholder="Enter your message..."
             onfocus="this.placeholder = ''"
             onblur="this.placeholder = 'Enter your message...'"
             cols="30"
             rows="5"
+            required
           ></textarea>
           <br />
           <input
             type="submit"
-            name="sendemail"
+            name="submit"
             value="Submit"
             class="btn submit"
+            id="submit"
           />
         </form>
+
         <footer>
           <a href="https://github.com/NemanjaJakonic" target="_blank"
             ><i class="fab fa-github fa-2x"></i
@@ -237,7 +256,8 @@ if(isset($_POST['sendemail']))
       </section>
     </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/featherlight.js"></script>
     <script src="js/baffle.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
