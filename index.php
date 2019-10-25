@@ -42,9 +42,7 @@
         </div>
 
         <h4 id="t3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia enim
-          perspiciatis praesentium incidunt, minus, vel maiores libero similique
-          neque magni, id saepe quidem.
+        Hardware eventually fails. Software eventually works.
         </h4>
         <div class="nav">
           <a href="#about" class="btn">About</a>
@@ -68,6 +66,7 @@
             <h5>Technologies I currently know and improving :</h5>
             <i class="fab fa-html5 fa-2x"></i>
             <i class="fab fa-css3-alt fa-2x"></i>
+            <i class="fab fa-sass fa-2x"></i>
             <i class="fab fa-js-square fa-2x"></i>
             <i class="fab fa-bootstrap fa-2x"></i>
             <i class="fab fa-php fa-2x"></i>
@@ -152,7 +151,7 @@
                 >Code</a
               >
               <p class="p2">
-                First Javascript project, well-known game rock, paper, scissors
+              First JavaScript project I did in my learning process, with Bootstrap 4, and Animate.css
               </p>
             </div>
           </div>
@@ -207,8 +206,7 @@
                 >Code</a
               >
               <p class="p5">
-                React app with LastFm and Lyrics.ovh API, search for song
-                lyrics, and info about album, track and artist
+              Simple React app for fetching song lyrics, artist, album and song information, using LastFM and Lyrics.ovh API
               </p>
             </div>
           </div>

@@ -282,12 +282,16 @@ textarea:focus {
 .certificate:hover .overlay-cert {
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid #0cebeb;
+  cursor: pointer;
 }
 .magnifying-glass-icon:hover {
   color: #cb356b;
 }
 .certificate img {
   width: 400px;
+}
+.technologies {
+  padding: 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -322,6 +326,4 @@ textarea:focus {
     padding: 20px 30px;
   }
 }
-.technologies {
-  padding: 30px;
-}
+
