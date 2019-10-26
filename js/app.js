@@ -46,9 +46,6 @@ $(document).ready(function() {
     setTimeout(function() {
       baffle('#t2').reveal(1500);
     }, 1000);
-    setTimeout(function() {
-      baffle('#t3').reveal(1500);
-    }, 1700);
   }
   baffleText();
 
@@ -80,4 +77,42 @@ $(document).ready(function() {
     $('pre').hide();
   }, 3000);
 });
-//$.featherlight($('#certificate-tile'), {});
+
+// // Set up our HTTP request
+// var xhr = new XMLHttpRequest();
+
+// // Setup our listener to process completed requests
+// xhr.onload = function () {
+
+// 	// Process our return data
+// 	if (xhr.status >= 200 && xhr.status < 300) {
+// 		// What do when the request is successful
+
+//     console.log(xhr.response)
+//     document.getElementById('quote').textContent = xhr.response.en
+//     document.getElementById('blockquote').textContent = xhr.response.author
+
+// 	} else {
+// 		// What do when the request fails
+// 		console.log('The request failed!');
+// 	}
+
+// 	// Code that should run regardless of the request status
+// 	//console.log('This always runs...');
+// };
+
+// // Create and send a GET request
+// // The first argument is the post type (GET, POST, PUT, DELETE, etc.)
+// // The second argument is the endpoint URL
+// xhr.open('GET', 'https://programming-quotes-api.herokuapp.com/quotes/random');
+// xhr.responseType = 'json';
+
+// xhr.send();
+
+$.getJSON('quotes.json', function(json) {
+  console.log(json[0].body); // this will show the info it in firebug console
+  let i = Math.floor(Math.random() * 325);
+  console.log(i);
+  document.getElementById('quote').textContent = json[i].body;
+  document.getElementById('blockquote').textContent = json[i].authors;
+});

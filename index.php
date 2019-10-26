@@ -41,9 +41,8 @@
           />
         </div>
 
-        <h4 id="t3">
-        Hardware eventually fails. Software eventually works.
-        </h4>
+        <p id="quote"></p>
+        <blockquote id="blockquote"></blockquote>
         <div class="nav">
           <a href="#about" class="btn">About</a>
           <a href="#projects" class="btn">Projects</a>
@@ -67,8 +66,8 @@
             <i class="fab fa-html5 fa-2x"></i>
             <i class="fab fa-css3-alt fa-2x"></i>
             <i class="fab fa-sass fa-2x"></i>
-            <i class="fab fa-js-square fa-2x"></i>
             <i class="fab fa-bootstrap fa-2x"></i>
+            <i class="fab fa-js-square fa-2x"></i>
             <i class="fab fa-php fa-2x"></i>
             <i class="fab fa-react fa-2x"></i>
             <i class="fab fa-magento fa-2x"></i>
@@ -151,7 +150,8 @@
                 >Code</a
               >
               <p class="p2">
-              First JavaScript project I did in my learning process, with Bootstrap 4, and Animate.css
+                First JavaScript project I did in my learning process, with
+                Bootstrap 4, and Animate.css
               </p>
             </div>
           </div>
@@ -206,7 +206,8 @@
                 >Code</a
               >
               <p class="p5">
-              Simple React app for fetching song lyrics, artist, album and song information, using LastFM and Lyrics.ovh API
+                Simple React app for fetching song lyrics, artist, album and
+                song information, using LastFM and Lyrics.ovh API
               </p>
             </div>
           </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 
 html,
 body {
@@ -9,13 +9,15 @@ body {
   background: transparent;
   z-index: 1;
   color: white;
-  font-family: "VT323", monospace;
+  font-family: 'VT323', monospace;
   font-size: 1.1rem;
 }
 h1,
 h2,
 h3 {
   text-transform: uppercase;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 #contact h2,
 #projects h2,
@@ -46,6 +48,12 @@ h3 {
   margin: 10px;
   text-align: center;
   overflow-x: hidden;
+}
+#quote {
+  height: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 50px;
 }
 
 .nav {
@@ -196,7 +204,7 @@ textarea:focus {
 }
 
 .project1 {
-  background-image: url("../img/project1.png");
+  background-image: url('../img/project1.png');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -205,7 +213,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project2 {
-  background-image: url("../img/project2.png");
+  background-image: url('../img/project2.png');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -214,7 +222,7 @@ textarea:focus {
   border: 1px solid #0cebeb;
 }
 .project3 {
-  background-image: url("../img/project3.png");
+  background-image: url('../img/project3.png');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -223,7 +231,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project4 {
-  background-image: url("../img/project4.png");
+  background-image: url('../img/project4.png');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -232,7 +240,7 @@ textarea:focus {
   border: 1px solid #0cebeb;
 }
 .project5 {
-  background-image: url("../img/project5.png");
+  background-image: url('../img/project5.png');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -294,6 +302,12 @@ textarea:focus {
   padding: 30px;
 }
 
+/* #main,
+#about,
+#projects,
+#contact {
+  height: 100vh;
+} */
 @media only screen and (max-width: 768px) {
   .project {
     width: 90vw;
@@ -315,15 +329,14 @@ textarea:focus {
   }
   .secondary-btn {
     padding: 5px 7px;
-     }
+  }
   #main,
   #about,
   #projects,
-  #contacts {
+  #contact {
     height: 100%;
   }
   .btn-project {
     padding: 20px 30px;
   }
 }
-
