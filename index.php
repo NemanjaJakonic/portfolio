@@ -180,8 +180,9 @@
             <p class="p4">Technologies used: ReactJS, MaterializeCSS</p>
             <div class="project project4">
               <div class="overlay"></div>
-              <a href="" class="btn btn-project">Demo</a>
-              <a href="" class="btn btn-project">Code</a>
+              <a href="https://formulaf1stats.netlify.com/" 
+              target="_blank" class="btn btn-project">Demo</a>
+              <a href="https://github.com/NemanjaJakonic/Formula-F1-Stats"  target="_blank" class="btn btn-project">Code</a>
               <p class="p4">
                 React app with Ergast Api, project I did for practical part of
                 course in Smart School
