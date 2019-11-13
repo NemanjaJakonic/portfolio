@@ -38,60 +38,11 @@
       <p id="quote"></p>
       <blockquote id="blockquote"></blockquote>
       <div class="nav">
-        <a href="#about" class="btn">About</a>
+        
         <a href="#projects" class="btn">Projects</a>
+        <a href="#about" class="btn">About</a>
+        <a href="#certificates" class="btn">Certificates</a>
         <a href="#contact" class="btn">Contact</a>
-      </div>
-    </section>
-    <section id="about">
-      <div>
-        <h2>About:</h2>
-        <p>
-          I'm Nemanja Jakonić, an ambitious self-taught front-end developer
-          from Novi Sad looking for a full-time web development role. I enjoy
-          making beautiful websites using HTML, CSS, PHP, JavaScript and
-          jQuery. My code is always clean, maintainable & cross-browser
-          friendly. My current passion is delving further into JavaScript,
-          with a particular focus on ReactJS. When I'm not coding you'll find
-          me swimming, or in a dojo training kendo.
-        </p>
-        <div class="technologies">
-          <h5>Technologies I currently know and improving :</h5>
-          <i class="fab fa-html5 fa-2x"></i>
-          <i class="fab fa-css3-alt fa-2x"></i>
-          <i class="fab fa-sass fa-2x"></i>
-          <i class="fab fa-bootstrap fa-2x"></i>
-          <i class="fab fa-js-square fa-2x"></i>
-          <i class="fab fa-php fa-2x"></i>
-          <i class="fab fa-react fa-2x"></i>
-          <i class="fab fa-magento fa-2x"></i>
-        </div>
-      </div>
-      <h2>Certificates:</h2>
-      <div id="certificates">
-        <div class="certificate">
-          <div class="overlay-cert"></div>
-          <img src="img/Responsive Web Design.png" height="270px" alt="" />
-          <a href="img/Responsive Web Design.png" id="certificate-tile" class="magnifying-glass-icon"
-            data-featherlight="image">
-            <i class="fa fa-search fa-2x"></i></a>
-        </div>
-
-        <div class="certificate">
-          <div class="overlay-cert"></div>
-          <img src="img/SmartSchoolCertificate1.jpg" height="270px" alt="" />
-          <a href="img/SmartSchoolCertificate1.jpg" id="certificate-tile" class="magnifying-glass-icon"
-            data-featherlight="image">
-            <i class="fa fa-search fa-2x"></i></a>
-        </div>
-
-        <div class="certificate">
-          <div class="overlay-cert"></div>
-          <img src="img/SmartSchoolCertificate2.jpg" height="270px" alt="" />
-          <a href="img/SmartSchoolCertificate2.jpg" id="certificate-tile" class="magnifying-glass-icon"
-            data-featherlight="image">
-            <i class="fa fa-search fa-2x"></i></a>
-        </div>
       </div>
     </section>
     <section id="projects">
@@ -168,6 +119,60 @@
         </div>
       </div>
     </section>
+    <section id="about">
+      <div>
+        <h2>About:</h2>
+        <p>
+          I'm Nemanja Jakonić, an ambitious self-taught front-end developer
+          from Novi Sad looking for a full-time web development role. I enjoy
+          making beautiful websites using HTML, CSS, PHP, JavaScript and
+          jQuery. My code is always clean, maintainable & cross-browser
+          friendly. My current passion is delving further into JavaScript,
+          with a particular focus on ReactJS. When I'm not coding you'll find
+          me swimming, or in a dojo training kendo.
+        </p>
+        <div class="technologies">
+          <h5>Technologies I currently know and improving :</h5>
+          <i class="fab fa-html5 fa-2x"></i>
+          <i class="fab fa-css3-alt fa-2x"></i>
+          <i class="fab fa-sass fa-2x"></i>
+          <i class="fab fa-bootstrap fa-2x"></i>
+          <i class="fab fa-js-square fa-2x"></i>
+          <i class="fab fa-php fa-2x"></i>
+          <i class="fab fa-react fa-2x"></i>
+          <i class="fab fa-magento fa-2x"></i>
+        </div>
+      </div>
+      </section>
+      <section id='certificates'>
+      <h2>Certificates:</h2>
+      <div class="certificates">
+        <div class="certificate">
+          <div class="overlay-cert"></div>
+          <img src="img/Responsive Web Design.png" height="270px" alt="" />
+          <a href="img/Responsive Web Design.png" id="certificate-tile" class="magnifying-glass-icon"
+            data-featherlight="image">
+            <i class="fa fa-search fa-2x"></i></a>
+        </div>
+
+        <div class="certificate">
+          <div class="overlay-cert"></div>
+          <img src="img/SmartSchoolCertificate1.jpg" height="270px" alt="" />
+          <a href="img/SmartSchoolCertificate1.jpg" id="certificate-tile" class="magnifying-glass-icon"
+            data-featherlight="image">
+            <i class="fa fa-search fa-2x"></i></a>
+        </div>
+
+        <div class="certificate">
+          <div class="overlay-cert"></div>
+          <img src="img/SmartSchoolCertificate2.jpg" height="270px" alt="" />
+          <a href="img/SmartSchoolCertificate2.jpg" id="certificate-tile" class="magnifying-glass-icon"
+            data-featherlight="image">
+            <i class="fa fa-search fa-2x"></i></a>
+        </div>
+      </div>
+    </section>
+    
     <section id="contact">
       <h2>Contact me:</h2>
 
