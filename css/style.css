@@ -204,7 +204,7 @@ textarea:focus {
 }
 
 .project1 {
-  background-image: url('../img/project1.png');
+  background-image: url('../img/project1.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -213,7 +213,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project2 {
-  background-image: url('../img/project2.png');
+  background-image: url('../img/project2.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -222,7 +222,7 @@ textarea:focus {
   border: 1px solid #0cebeb;
 }
 .project3 {
-  background-image: url('../img/project3.png');
+  background-image: url('../img/project3.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -231,7 +231,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project4 {
-  background-image: url('../img/project4.png');
+  background-image: url('../img/project4.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -240,7 +240,7 @@ textarea:focus {
   border: 1px solid #0cebeb;
 }
 .project5 {
-  background-image: url('../img/project5.png');
+  background-image: url('../img/project5.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
