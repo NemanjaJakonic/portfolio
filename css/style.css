@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 
 html,
 body {
@@ -9,7 +9,7 @@ body {
   background: transparent;
   z-index: 1;
   color: white;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 1.1rem;
 }
 h1,
@@ -204,7 +204,7 @@ textarea:focus {
 }
 
 .project1 {
-  background-image: url('../img/project1.jpg');
+  background-image: url("../img/project1.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -213,7 +213,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project2 {
-  background-image: url('../img/project2.jpg');
+  background-image: url("../img/project2.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -222,7 +222,7 @@ textarea:focus {
   border: 1px solid #0cebeb;
 }
 .project3 {
-  background-image: url('../img/project3.jpg');
+  background-image: url("../img/project3.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -231,7 +231,7 @@ textarea:focus {
   border: 1px solid #cb356b;
 }
 .project4 {
-  background-image: url('../img/project4.jpg');
+  background-image: url("../img/project4.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -240,7 +240,16 @@ textarea:focus {
   border: 1px solid #0cebeb;
 }
 .project5 {
-  background-image: url('../img/project5.jpg');
+  background-image: url("../img/project5.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid #0cebeb;
+}
+.project6 {
+  background-image: url("../img/project6.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
