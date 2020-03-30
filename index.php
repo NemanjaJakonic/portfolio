@@ -62,9 +62,22 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
         <section id="projects">
             <h2>Projects:</h2>
             <div class="projects">
-                <div id="project1">
+                <div>
+                    <h3>Komplet Design</h3>
+                    <p class="p7">
+                        Technologies used: HTMl, CSS, PHP, Bootstrap 4 , jQuery
+                    </p>
+                    <div class="project project7">
+                        <div class="overlay"></div>
+                        <a href="http://kompletdizajn.com/" target="_blank" class="btn btn-project">Live</a>
+                        <p class="p7">
+                            Fully responsive website for design company.
+                        </p>
+                    </div>
+                </div>
+                <div>
                     <h3>Laravel Blog</h3>
-                    <p class="p1">
+                    <p class="p6">
                         Technologies used: HTMl, CSS, Bootstrap 4 , Laravel
                     </p>
                     <div class="project project6">
@@ -78,7 +91,7 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
                         </p>
                     </div>
                 </div>
-                <div id="project1">
+                <div>
                     <h3>Kokoro</h3>
                     <p class="p1">
                         Technologies used: HTMl, CSS, Javascript, Jquery
@@ -95,7 +108,7 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
                     </div>
                 </div>
 
-                <div id="project2">
+                <div>
                     <h3>Rock, paper, scissors</h3>
                     <p class="p2">
                         Technologies used: HTMl, CSS, Bootstrap 4, Javascript
@@ -112,7 +125,7 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
                         </p>
                     </div>
                 </div>
-                <div id="project3">
+                <div>
                     <h3>WeatherJS</h3>
                     <p class="p3">Technologies used: HTMl, CSS, Javascript</p>
                     <div class="project project3">
@@ -123,7 +136,7 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
                         <p class="p3">Simple weather app with OpenWeather Api</p>
                     </div>
                 </div>
-                <div id="project4">
+                <div>
                     <h3>Formula F1 Stats</h3>
                     <p class="p4">Technologies used: ReactJS, MaterializeCSS</p>
                     <div class="project project4">
@@ -137,7 +150,7 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
                         </p>
                     </div>
                 </div>
-                <div id="project5">
+                <div>
                     <h3>LyricsApp</h3>
                     <p class="p5">Technologies used: ReactJS, Bootstrap 4</p>
                     <div class="project project5">
@@ -168,14 +181,14 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
                 </p>
                 <div class="technologies">
                     <h5>Technologies I currently know and improving :</h5>
-                    <i class="fab fa-html5 fa-2x"></i>
-                    <i class="fab fa-css3-alt fa-2x"></i>
-                    <i class="fab fa-sass fa-2x"></i>
-                    <i class="fab fa-bootstrap fa-2x"></i>
-                    <i class="fab fa-js-square fa-2x"></i>
-                    <i class="fab fa-php fa-2x"></i>
-                    <i class="fab fa-react fa-2x"></i>
-                    <i class="fab fa-magento fa-2x"></i>
+                    <i class="fab fa-html5 fa-2x" title="HTML5"></i>
+                    <i class="fab fa-css3-alt fa-2x" title="CSS3"></i>
+                    <i class="fab fa-sass fa-2x" title="Sass"></i>
+                    <i class="fab fa-bootstrap fa-2x" title="Bootstrap"></i>
+                    <i class="fab fa-js-square fa-2x" title="JavaScript"></i>
+                    <i class="fab fa-php fa-2x" title="PHP"></i>
+                    <i class="fab fa-react fa-2x" title="ReactJS"></i>
+                    <i class="fab fa-magento fa-2x" title="Magento"></i>
                 </div>
             </div>
         </section>

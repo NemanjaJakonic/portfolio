@@ -53,7 +53,6 @@ $(document).ready(function() {
     $(".p1").css({ opacity: "1" });
     baffle(".p1").reveal(500);
   });
-
   $(".project2").one("mouseenter", function() {
     $(".p2").css({ opacity: "1" });
     baffle(".p2").reveal(500);
@@ -75,6 +74,10 @@ $(document).ready(function() {
   $(".project6").one("mouseenter", function() {
     $(".p6").css({ opacity: "1" });
     baffle(".p6").reveal(500);
+  });
+  $(".project7").one("mouseenter", function() {
+    $(".p7").css({ opacity: "1" });
+    baffle(".p7").reveal(500);
   });
   setTimeout(function() {
     $("pre").hide();
