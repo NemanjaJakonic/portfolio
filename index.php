@@ -17,6 +17,19 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
     <link rel="stylesheet" media="screen" href="css/style.css" />
     <link rel="stylesheet" href="css/featherlight.css" />
     <script src="https://kit.fontawesome.com/7997da006a.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114257574-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114257574-2');
+    </script>
+
     <title>Nemanja Jakonić</title>
 </head>
 
