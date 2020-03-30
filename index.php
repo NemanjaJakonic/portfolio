@@ -18,7 +18,7 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
     <link rel="stylesheet" href="css/featherlight.css" />
     <script src="https://kit.fontawesome.com/7997da006a.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114257574-2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162156086-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -27,8 +27,9 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
     }
     gtag('js', new Date());
 
-    gtag('config', 'UA-114257574-2');
+    gtag('config', 'UA-162156086-1');
     </script>
+
 
     <title>Nemanja Jakonić</title>
 </head>
