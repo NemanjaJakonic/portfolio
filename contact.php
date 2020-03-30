@@ -1,5 +1,5 @@
 <?php
-
+//session_start();
 // You need to install the sendgrid client library so run: composer require sendgrid/sendgrid
 require 'vendor/autoload.php';
 // contains a variable called: $API_KEY that is the API Key.
@@ -7,8 +7,6 @@ require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 $API_KEY = getenv('API_KEY');
-
-session_start();
 $name = $email = $message = "";
 
 if (isset($_POST['submit'])) {
@@ -34,3 +32,18 @@ if (isset($_POST['submit'])) {
 
     }
 }
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+    <p><?php echo $API_KEY ?></p>
+</body>
+
+</html>

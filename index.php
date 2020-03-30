@@ -5,6 +5,7 @@ if (isset($_SESSION['success']) && !empty($_SESSION['success'])) {
     echo htmlentities($_SESSION['success']);
     unset($_SESSION['success']);
 }
+
 ?>
 
 <!DOCTYPE html>
