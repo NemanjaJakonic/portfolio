@@ -6,6 +6,8 @@ require 'vendor/autoload.php';
 // You need this API_KEY created on the Sendgrid website.
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
+$API_KEY = getenv('API_KEY');
+
 session_start();
 $name = $email = $message = "";
 
@@ -22,7 +24,7 @@ if (isset($_POST['submit'])) {
     $email->addContent("text/plain", $message);
     // $email->addContent(
     //     "text/html", );
-    $sendgrid = new \SendGrid(getenv('API_KEY'));
+    $sendgrid = new \SendGrid(getenv($API_KEY));
 
     if ($sendgrid->send($email));
     {
