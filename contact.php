@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
     $email->addContent("text/plain", $message);
     // $email->addContent(
     //     "text/html", );
-    $sendgrid = new \SendGrid(getenv($API_KEY));
+    $sendgrid = new \SendGrid($API_KEY);
 
     if ($sendgrid->send($email));
     {
